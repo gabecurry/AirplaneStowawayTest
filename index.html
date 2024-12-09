@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airplane Stowaway Mystery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Airplane Stowaway Mystery</h1>
+    <p id="story"></p>
+    <div class="info">
+      <p>Time Remaining: <span id="timer">300</span> seconds</p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <button id="suspects-button">View Suspects</button>
+    <button id="hint-button">Get a Hint</button>
+    <p id="hint-text"></p>
+  </div>
+
+  <div id="suspects-page" class="hidden">
+    <h2>Suspects</h2>
+    <div id="suspects-list"></div>
+    <button id="back-button">Back to Main Menu</button>
+  </div>
+
+  <div id="end-screen" class="hidden">
+    <h2 id="end-message"></h2>
+    <div id="culprit-image"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
